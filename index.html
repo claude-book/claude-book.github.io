@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Os códigos do livro Do Chat ao Cowork e Code — exemplos construídos com o Claude Code, para clonar, rodar, estudar e adaptar.">
+<title>claude-book — os códigos do livro Do Chat ao Cowork e Code</title>
+<style>
+  :root {
+    --bg: #faf9fc; --surface: #ffffff; --ink: #26212e; --muted: #6b6477;
+    --accent: #6d3fc0; --line: #e6e1ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17141c; --surface: #201c27; --ink: #eae6f2; --muted: #a49bb3;
+      --accent: #a583e8; --line: #332d3e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: .14em; font-size: .72rem;
+    color: var(--accent); font-weight: 700; margin: 0 0 .75rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .75rem; text-wrap: balance; }
+  h2 { font-size: 1.12rem; margin: 2.25rem 0 .5rem; }
+  p { margin: .5rem 0 1rem; }
+  .lead { font-size: 1.12rem; color: var(--muted); }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  em { font-style: italic; }
+  .repo {
+    display: block; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 1rem 1.2rem; margin: .9rem 0; text-decoration: none;
+    color: var(--ink);
+  }
+  .repo:hover { border-color: var(--accent); }
+  .repo strong { color: var(--accent); font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .95rem; }
+  .repo span { display: block; margin-top: .25rem; color: var(--muted); font-size: .95rem; }
+  .soon { color: var(--muted); font-size: .92rem; font-style: italic; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">claude-book</p>
+  <h1>Os códigos do livro <em>Do Chat ao Cowork e Code</em></h1>
+  <p class="lead">
+    Este é o lar dos projetos criados ao longo do livro de <strong>Henrique Alvarenga</strong> sobre o
+    <strong>Claude Code</strong>, o agente de programação da Anthropic. Cada repositório aqui é um exemplo
+    citado nos capítulos — você pode clonar, rodar, estudar e adaptar.
+  </p>
+
+  <h2>Sobre o livro</h2>
+  <p>
+    Escrito para quem quer construir software usando <em>vibe coding</em> — conversando em linguagem
+    natural para a IA escrever o código. Do primeiro chat até projetos completos, o livro mostra, com
+    casos reais, como transformar ideias em ferramentas que funcionam — como um servidor MCP que cria
+    e publica Google Forms.
+  </p>
+
+  <h2>Repositórios</h2>
+  <a class="repo" href="https://github.com/claude-book/mcp-server-google-forms">
+    <strong>mcp-server-google-forms</strong>
+    <span>Servidor MCP que dá ao Claude o poder de criar, editar e publicar Google Forms.
+    Vem com <a href="https://claude-book.github.io/mcp-server-google-forms/">site próprio</a>,
+    documentação e a revisão de código contada no livro.</span>
+  </a>
+  <p class="soon">Mais exemplos chegam conforme os capítulos avançam.</p>
+
+  <footer>
+    Lançamento: em breve · Autor: Henrique Alvarenga · Código sob licença MIT
+  </footer>
+</div>
+</body>
+</html>
